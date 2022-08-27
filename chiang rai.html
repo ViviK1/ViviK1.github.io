@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="icon" href="images/travel-bag.ico" 
+    type="images/x-icon">
+    <title>Chiang Rai</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="page-logo">
+        <a href="/index.html">Nomadic Vivi</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/places.html">Destinations</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="text">
+        <div class="city-name" data-tooltip="Learn More"><a href="https://en.wikipedia.org/wiki/Chiang_Rai"><h2>Chiang Rai</h2></a></div>
+        <p>
+          If you like a peaceful and non-rushing lifestyle, Chiang Rai is undeniably a place for you! Though sometimes traffic here can be as crazy as in hectic Chiang Mai (mainly in the morning hours), don't be pulled back. A small number of foreigners, very friendly, humble and easy-going locals (primarily non-English speaking) will compensate for it.
+        </p>
+      </div>
+      <div class="image">
+    <li>
+        <img src="/images/chiang rai.jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (2).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (3).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (4).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (5).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (6).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (7).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (8).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (9).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (10).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (11).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (12).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (13).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (14).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (15).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (16).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (17).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (18).jpg" alt="">
+    </li>
+    <li>
+        <img src="/images/chiang rai (19).jpg" alt="">
+    </li><li>
+        <img src="/images/chiang rai (20).jpg" alt="">
+    </li>
+</div>
+
+<div class="popup-image">
+  <span>&times;</span>
+  <img src="/images/chiang rai.jpg" alt="" />
+</div>
+</main>
+<script>document.querySelectorAll(".image img").forEach(image => {
+  image.onclick = () =>{
+  document.querySelector(".popup-image"). style.display ='block';
+  document.querySelector(".popup-image img").src = image.getAttribute('src');
+  }
+});
+
+document.querySelector(".popup-image span").onclick = () => {
+  document.querySelector(".popup-image").style.display ='none';
+}
+</script>
+
+
+<footer>
+  <ul>
+    <li>
+      <a href="https://instagram.com"
+        ><img src="/images/insta.png" alt="Instagram logo"
+      /></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/viktoriia-kuralekh-69396813b/"
+            ><img src="/images/linkedin.png" alt="Linkedin logo"
+            /></a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

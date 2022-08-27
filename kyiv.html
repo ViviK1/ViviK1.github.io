@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="explore.css" />
+    <link rel="icon" href="images/travel-bag.ico" 
+    type="images/x-icon">
+    <title>Kyiv</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="page-logo">
+        <a href="/index.html">Nomadic Vivi</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/places.html">Destinations</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="text">
+        <div class="city-name" data-tooltip="Learn More">
+          <a href="https://en.wikipedia.org/wiki/Kiev"><h2>Kyiv</h2></a>
+        </div>
+        <p>
+          Kyiv is modern and progressive. It will give you the impression of a
+          confident and assured man who knows what he wants. And if you happen
+          to be there, you don't want to miss the chance to visit Unit City, a
+          prototype of the future city!
+        </p>
+      </div>
+      <div class="image">
+        <li>
+          <img src="/images/kiev.jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (2).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (3).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (4).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (5).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (6).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (7).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (8).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (9).jpg" alt="" />
+        </li>
+        <li>
+          <img src="/images/kiev (10).jpg" alt="" />
+        </li>
+      </div>
+
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="/images/kiev.jpg" alt="" />
+      </div>
+    </main>
+
+    <script>document.querySelectorAll(".image img").forEach(image => {
+      image.onclick = () =>{
+      document.querySelector(".popup-image"). style.display ='block';
+      document.querySelector(".popup-image img").src = image.getAttribute('src');
+      }
+    });
+    
+    document.querySelector(".popup-image span").onclick = () => {
+      document.querySelector(".popup-image").style.display ='none';
+    }
+    </script>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://instagram.com"
+            ><img src="/images/insta.png" alt="Instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/viktoriia-kuralekh-69396813b/"
+            ><img src="/images/linkedin.png" alt="Linkedin logo"
+            /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

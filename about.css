@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(
+    30deg,
+    rgba(218, 218, 139, 0.795),
+    rgba(221, 221, 115, 0.815)
+  );
+  color: rgb(59, 59, 59);
+  position: relative;
+}
+
+header {
+  position: static;
+}
+
+#page-logo a {
+  color: rgba(196, 183, 2, 0.877);
+}
+
+header a {
+  color: rgba(97, 90, 0, 0.877);
+}
+
+header nav a:hover {
+  background-color: rgba(146, 156, 1, 0.514);
+  color: rgb(59, 59, 59);
+}
+
+
+main  {
+  width: 96%;
+  margin: 0 auto 48px auto;
+  box-sizing: border-box;
+  min-height: 70vh;
+}
+
+main{
+  position: relative;
+}
+
+main .picture-text {
+  position: relative;
+  display: flex;
+  background-color: rgb(245, 244, 179); 
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  margin: 30 px auto;
+  height: 400px ;
+}
+
+main .picture-text img {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+
+
+.item-content {
+  position: relative;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.item-content h2 {
+  margin: 0;
+}

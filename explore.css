@@ -1,0 +1,261 @@
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(2, 62, 97);
+  }
+
+  header ul {
+    list-style: none;
+  }
+
+  header {
+    position: static;
+  }
+  
+  header nav a:hover {
+    background-color: rgb(6, 41, 116);
+    color: grey;
+  }
+  
+  #page-logo a {
+    font-family: "Oleo Script", sans-serif;
+    color: rgb(0, 24, 70);
+    padding: 10px;
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header li {
+    margin-left: 20px;
+  }
+  
+  header a {
+    color: rgb(0, 24, 70);
+    text-decoration: none;
+    padding: 12px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+  
+#destinations {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+  
+  .destination {
+    margin: 0 20px;
+    text-transform: uppercase;
+  }
+  
+  .destination p {
+    text-align: center;
+    font-size: 24px;
+    color: grey;
+    margin: 20px 0;
+  }
+  
+  .destination img {
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(78, 78, 78);
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .destination strong {
+    color: rgb(0, 178, 146);
+  }
+  
+  footer {
+    background: linear-gradient(70deg, rgb(27, 27, 27), rgb(26, 25, 25));
+    padding: 36px 0;
+  }
+  
+  footer ul {
+      display: flex;
+      justify-content: center;
+  }
+  
+  footer li {
+      width: 80px;
+      height: 80px;
+      margin: 0 50px;
+  }
+  
+  footer img {
+      width: 100%;
+      height: 100%;
+  }
+
+  body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    position: relative;
+    background: linear-gradient(30deg, rgb(65, 123, 170), rgb(78, 108, 165));
+  }
+
+ .image {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image {
+    width: 90%;
+    margin: 0 auto 48px auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+  }
+
+.image li {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+   .image li img {
+    position: relative;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+   }
+
+   .image li img:hover {
+    transform: scale(1.1);
+   }
+  
+  main .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0, 0, .9);
+    height: 100%;
+    width: 100%; 
+    z-index: 100;
+    display: none;
+  }
+
+ main .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+  }
+
+  main .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px solid;
+    width: 500px;
+    object-fit: cover;
+    /* margin: 30px auto; */
+  }
+
+  @media  (max-width: 768px) {
+    main .popup-image img {
+      width: 95%;
+    }
+  }
+ 
+
+  .item-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .item-content h2 {
+    margin: 0;
+  } 
+  
+  h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+  p {
+    font-size: 18px;
+  }
+
+  .text a, p{
+    text-decoration: none;
+    color: rgb(0, 72, 90);
+  }
+
+  .text a:hover {
+    color: rgb(1, 42, 51);
+  }
+
+  .text {
+    padding: 19px;
+    margin: 32px auto;
+    background-color: rgba(168, 248, 221, 0.452);
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0 , 0, 0.2);
+    width: 87%;
+    text-align: center;
+  }
+
+  .text{
+    position: relative;
+}
+
+  .city-name::before,
+.city-name::after {
+  --scale: 0;
+
+  position: absolute;
+  /* bottom: -4rem; */
+  left: 54%;
+  transform: translateX(-25%) translateY(160%) scale(var(--scale));
+  transition: 50ms transform;
+  transform-origin: top center;
+}
+
+.city-name::before {
+  font-size: 12px;
+  content: attr(data-tooltip);
+  color: rgb(5, 107, 107);
+  padding: .4rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background: rgb(168, 167, 167);
+}
+
+.city-name:hover::before {
+  --scale: 1;
+}
+
